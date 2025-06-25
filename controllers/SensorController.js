@@ -7,9 +7,10 @@ async function createDataSensor(req,res){
     await datosSen.save();
     res.send("Datos guardados correctamente")
     
+    
    } catch (error) {
     console.log(error);
-    
+    //Solo es el error
    }
 }
 
