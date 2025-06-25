@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const SensorSchema=mongoose.Schema({
     sensor:String,
     location:String,
-    pm1_0:String,
-    pm2_5:String,
+    pm1:String,
+    pm2:String,
     pm10:String
 }, {timestamps:true})
 
