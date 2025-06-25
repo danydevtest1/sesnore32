@@ -14,7 +14,17 @@ async function createDataSensor(req,res){
    }
 }
 
+async function getDatosSensor(req,res) {
+    try {
+    const dSensores=await SensorModel.find({});
+        res.json(dSensores);
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
 module.exports={
-    createDataSensor
+    createDataSensor,
+    getDatosSensor
 }
 
