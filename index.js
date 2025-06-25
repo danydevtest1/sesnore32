@@ -1,4 +1,4 @@
-const app=require('./src/server');
+const app=require('./server');
 const mongoose=require('mongoose');
 
 const port = process.env.PORT || 4000;
